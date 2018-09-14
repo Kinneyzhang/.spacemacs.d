@@ -30,17 +30,24 @@
 ;;; Code:
 
 (defconst kinney-packages
-  '(youdao-dictionary)
+  '(youdao-dictionary
+    company
+
+    )
 )
   ;; 初始化 package
   ;; 可以使用 , d m 快捷键, 然后按下 e 展开宏
-  (defun kinney/init-youdao-dictionary ()
-    (use-package youdao-dictionary
-      :defer t
-      :init
-      (spacemacs/set-leader-keys "oy" 'youdao-dictionary-search-at-point+)
-      )
-    
+(defun kinney/init-youdao-dictionary ()
+  (use-package youdao-dictionary
+    :defer t
+    :init
+    (spacemacs/set-leader-keys "oy" 'youdao-dictionary-search-at-point+)
+    ))
+
+(defun kinney/post-init-company()
+  (setq company-minimum-prefix-length 1))
+
+
 
   "The list of Lisp packages required by the kinney layer.
 
@@ -67,7 +74,7 @@ Each entry is either:
         `./local/PACKAGE/PACKAGE.el'
 
       - A list beginning with the symbol `recipe' is a melpa
-        recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
+        recipe.  See: https://github.com/milkypostman/melpa#recipe-format"
 
 
 ;;; packages.el ends here
