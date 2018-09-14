@@ -22,7 +22,7 @@
  '(cua-read-only-cursor-color "#859900")
  '(cursor-color "#cccccc")
  '(cursor-type (quote bar))
- '(custom-enabled-themes (quote (moe-light)))
+ '(custom-enabled-themes (quote (leuven)))
  '(custom-safe-themes
    (quote
     ("13d20048c12826c7ea636fbe513d6f24c0d43709a761052adbca052708798ce3" "1dd7b369ab51f00e91b6a990634017916e7bdeb64002b4dda0d7a618785725ac" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "0c32e4f0789f567a560be625f239ee9ec651e524e46a4708eb4aba3b9cdc89c5" default)))

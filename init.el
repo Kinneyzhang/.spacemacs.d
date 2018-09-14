@@ -45,12 +45,8 @@ values."
      org
      kinney
      themes-megapack
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
      spell-checking
      syntax-checking
-     ;; version-control
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -130,9 +126,9 @@ values."
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
                          leuven
-                         enburn
-                         spacemacs-dark
+                         meo-light
                          spacemacs-light
+                         spacemacs-dark
                          monokai
                          )
    ;; If non nil the cursor color matches the state color in GUI Emacs.

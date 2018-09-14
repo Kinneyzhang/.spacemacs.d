@@ -32,7 +32,7 @@
 (defconst kinney-packages
   '(youdao-dictionary
     company
-
+    (gulpjs :location (recipe :fetcher github :repo "zilongshanren/emacs-gulpjs"))
     )
 )
   ;; 初始化 package
@@ -47,7 +47,9 @@
 (defun kinney/post-init-company()
   (setq company-minimum-prefix-length 1))
 
-
+(defun kinney/init-gulpjs()
+  (use-package gulpjs
+    :init))
 
   "The list of Lisp packages required by the kinney layer.
 
