@@ -22,3 +22,8 @@
 	      ("j" "Journal" entry (file+datetree "~/org/journal.org")
 	       "* %?\nEntered on %U\n %i\n")
 	      ))
+
+;; use aspell as ispell backend
+(setq-default ispell-program-name "aspell")
+;; use American English as ispell default dictionary
+(ispell-change-dictionary "american" t)
