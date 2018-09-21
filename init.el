@@ -47,6 +47,8 @@ values."
      themes-megapack
      spell-checking
      syntax-checking
+     html
+     csharp
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -57,7 +59,24 @@ values."
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
-   dotspacemacs-excluded-packages '(vi-tilde-fringe)
+   dotspacemacs-excluded-packages
+   '(magit-gh-pulls magit-gitflow  evil-mc realgud tern company-tern
+                    evil-args evil-ediff evil-exchange evil-unimpaired
+                    evil-indent-plus volatile-highlights smartparens
+                    holy-mode skewer-mode rainbow-delimiters
+                    highlight-indentation vi-tilde-fringe eyebrowse
+                    org-bullets smooth-scrolling org-repo-todo org-download org-timer
+                    git-gutter git-gutter-fringe  evil-escape
+                    gh-md evil-lisp-state spray lorem-ipsum symon
+                    ac-ispell ace-jump-mode auto-complete auto-dictionary
+                    clang-format define-word google-translate disaster epic
+                    org-present orgit orglue
+                    helm-flyspell flyspell-correct-helm clean-aindent-mode
+                    helm-c-yasnippet ace-jump-helm-line helm-make magithub
+                    helm-themes helm-swoop helm-spacemacs-help smeargle
+                    ido-vertical-mode flx-ido company-quickhelp
+                    window-purpose ivy-purpose helm-purpose spacemacs-purpose-popwin
+                    )
    ;; Defines the behaviour of  Spacemacs when installing packages.
    ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
    ;; `used-only' installs only explicitly used packages and uninstall any
@@ -308,6 +327,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
         '(("melpa-cn" . "http://elpa.zilongshanren.com/melpa/")
 	        ("org-cn"   . "http://elpa.zilongshanren.com/org/")
 	        ("gnu-cn"   . "http://elpa.zilongshanren.com/gnu/")))
+  ;;启动时加载org-agenda
+  (add-hook 'after-init-hook 'org-agenda-list)
  )
 
 (defun dotspacemacs/user-config ()
