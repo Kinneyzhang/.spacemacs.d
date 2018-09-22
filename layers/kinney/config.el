@@ -30,6 +30,11 @@
 
         ))
 
+;;f1 打开init.el配置文件
+(defun open-my-gtd-file()
+  (interactive)
+  (find-file "~/org/gtd.org"))
+(global-set-key (kbd "C-c g") 'open-my-gtd-file)
 ;;----------------------------------------------------------------------
 ;; use aspell as ispell backend
 (setq-default ispell-program-name "aspell")

@@ -43,12 +43,13 @@ values."
      git
      markdown
      org
-     kinney
      themes-megapack
      spell-checking
      syntax-checking
      html
      csharp
+
+     kinney
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -329,7 +330,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
 	        ("gnu-cn"   . "http://elpa.zilongshanren.com/gnu/")))
   ;;启动时加载org-agenda
   (add-hook 'after-init-hook 'org-agenda-list)
- )
+  )
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
