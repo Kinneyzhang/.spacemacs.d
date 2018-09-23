@@ -47,3 +47,4 @@
 ;;横向分割窗口
 ;;(setq split-height-threshold nil)
 ;;(setq split-width-threshold 0)
+
